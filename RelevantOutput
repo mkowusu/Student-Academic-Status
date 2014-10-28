@@ -1,0 +1,100 @@
+List of currently enrolled students:
+
+Name: Michael Owusu
+Current Enrolled Credits: 16.0
+Total Credits Earned: 42.0
+Humanities Credits: 12.0
+Social Studies Credits: 12.0
+Science Credits: 20.0
+General Credits: 14.0
+Major: Computer Science
+
+Name: Erik Opavsky
+Current Enrolled Credits: 4.0
+Total Credits Earned: 124.0
+Major: Computer Science
+
+Name: Peter Dixon
+Current Enrolled Credits: 5.0
+Total Credits Earned: 144.0
+Major: Computer Science
+
+Name: Drew Cooper
+Current Enrolled Credits: 4.0
+Total Credits Earned: 8.0
+
+Name: Terri Wilson
+Current Enrolled Credits: 4.0
+Total Credits Earned: 120.0
+Humanities Credits: 30.0
+Social Studies Credits: 25.0
+Science Credits: 25.0
+General Credits: 40.0
+Major: English
+
+Name: John Yang
+Current Enrolled Credits: 5.0
+Total Credits Earned: 130.0
+Humanities Credits: 32.0
+Social Studies Credits: 26.0
+Science Credits: 27.0
+General Credits: 40.0
+Major: Music
+
+
+End of Listing
+
+Testing of Regular object functionality: 
+
+First Name: Michael
+Last Name: Owusu
+Current enrolled credits: 16.0
+Total Credits Earned: 42.0
+Student Category: Regular
+Major: Computer Science
+Class Standing: Second Year, Semester 1
+Making good progress? true
+Valid Registration? true
+
+Testing of Employee object functionality: 
+
+First Name: Terri
+Last Name: Wilson
+Current enrolled credits: 4.0
+Total Credits Earned: 120.0
+Student Category: Employee
+Major: English
+Class Standing: Senior Year, Semester 2
+Making good progress? true
+Valid Registration? true
+
+Testing of Alum object functionality: 
+
+First Name: Erik
+Last Name: Opavsky
+Current enrolled credits: 4.0
+Total Credits Earned: 124.0
+Student Category: Alum
+Major: Computer Science
+Valid Registration? true
+
+Testing of Special object functionality: 
+
+First Name: Drew
+Last Name: Cooper
+Current enrolled credits: 4.0
+Total Credits Earned: 8.0
+Student Category: Special
+Valid Registration? true
+
+Testing of the NonRegular class's validRegistration functionality: 
+
+First Name: Peter
+Last Name: Dixon
+Valid Registration? false
+
+Testing of the Employee class's validRegistration functionality: 
+
+First Name: John
+Last Name: Yang
+Valid Registration? false

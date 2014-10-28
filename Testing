@@ -1,0 +1,36 @@
+Michael Owusu
+10/5/14
+
+Supplemental Problem 2 Testing
+
+Note: I used the Registrar class as my means for testing. I went through every method and found what could possibly go wrong and then tested them by calling the procedures in my registrar class. Once all my methods worked as I expected them to when I ran the Registrar class, I knew the Java Application was running correctly.
+
+Some of the reasonable situations I suspected and tested for are:
+
+Reasonable Circumstances:
+1. The first possible issue is that getClassStanding for NonRegular students could have incorrectly thrown an exception or not at all.
+
+2. The second possible issue is that makingGoodProgress for NonRegular students could have incorrectly thrown an exception or not at all.
+
+3. Another possible circumstance is that for NonRegular students validRegistration didn't check currentEnrolledCredits for between 0 and 4 and not for between 12 and 18
+
+4. As with the above circumstance, Employee objects are not valid if they have more than 4 credits. It is reasonable to check if the overwriting implementation of validRegistration is working correctly.
+
+5. A fifth reasonable circumstance was how the Special object handled getMajor. It should throw an Exception because Special students don't have majors.
+
+Test Cases (Corresponding to circumstances above)
+
+Note: I am attaching a sample output with this. I will annotate the physical copy by hand to show the test cases. All of the necessary sample output will be in a single run. 
+
+1. I tested this by calling the methods in my Registrar class in a try/catch block. I expected my output to skip over any method that threw an exception. At first, the exceptions stopped my code so I looked online for how to keep code running after an exception is caught. After that, I configured my code so that exceptions are handled without it effecting the output of the program.
+
+2.  I tested this by calling the methods in my Registrar class in a try/catch block. I expected my output to skip over any method that threw an exception. As with the last test case, my problems arose from the fact that I didn't fully understand throwing exceptions. In this case the solution was the same as in the first test case. After researching online and some trial and error, I found out how to correctly implement my exceptions such that they didnt stop my program or print anything in my output.
+
+3. I tested this by adding a NonRegular (Alum) object with more than 4 credits. I expected validRegistration to return false when called and it did. Since Alum is a type of NonRegular and I did not overwrite the validRegistration class, this applies to Special objects as well. This can be contrasted with the other Alum and Special objects I implemented with valid registration.
+
+4. Since employee has a different super than Alum and Special, I had to test validRegistration again to make sure that only students with 0-4 credits were valid. I tested this by adding an Employee student with 5 credits. I expected the outcome to be false and it was. This can be contrasted with the other Employee object I implemented with valid registration.
+
+5. See explanation for Cases 1 and 2 
+
+Statement of Correctness:
+I checked that all my methods worked correctly by running them at least once in the main of the Registrar class. Since I can interact with the Registrar class and call all of my methods from the other classes and they run when they are supposed to in the manor I am expecting (which is in accordance with the problem prompt) I know that my code is correct.
